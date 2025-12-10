@@ -1,5 +1,5 @@
 # fusion_model.py
-
+from sklearn.metrics import classification_report
 import numpy as np
 from vit_model import predict_vit
 from heuristics import texture_score, color_anomaly, boundary_artifact, eye_glint_score
@@ -36,3 +36,5 @@ def run_fusion(pil_img):
         "boundary": bound,
         "eye_glint": glint
     }
+
+
